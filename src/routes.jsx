@@ -11,23 +11,21 @@ import Cart from './pages/Cart';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import TestModal from './pages/TestModal';
 
 const MyRoutes = () => {
   return (
     <BrowserRouter>
       <Header />
-      <main className="main">
-        <section className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/reservations" element={<Reservations />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/ratings" element={<Ratings />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </section>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/ratings" element={<Ratings />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/test-modal" element={<TestModal />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   );
