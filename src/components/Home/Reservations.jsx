@@ -1,5 +1,5 @@
 import Title from '../Title';
-import ButtonYellow from '../Buttons/ButtonYellow';
+import { NavLink } from 'react-router-dom';
 
 const Reservations = () => {
   return (
@@ -20,7 +20,12 @@ const Reservations = () => {
                     <br />
                     Reserve sua data e horário de forma simples e rápida.
                   </p>
-                  <ButtonYellow>Fazer reserva</ButtonYellow>
+                  <NavLink
+                    to="/reservations"
+                    className="btn-base btn-yellow mt-3"
+                  >
+                    Fazer reserva
+                  </NavLink>
                 </div>
                 <div className="col-5">
                   <div className="card-reserva h-[320px] w-[320px] rounded-[120px] bg-white absolute right-0 -top-6"></div>

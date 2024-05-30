@@ -9,7 +9,7 @@ import {
   faPizzaSlice,
 } from '@fortawesome/free-solid-svg-icons';
 import CardItem from '../CardItem';
-import ButtonWhiteLink from '../Buttons/ButtonWhiteLink';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (
@@ -25,30 +25,30 @@ const Menu = () => {
           />
 
           <div className="col-12 mb-7">
-            <ButtonWhiteLink sm className="active">
+            <Link className="btn-base btn-white btn-small mr-3 active">
               <FontAwesomeIcon icon={faHamburger} />
               &nbsp; Burguers
-            </ButtonWhiteLink>
-            <ButtonWhiteLink sm>
+            </Link>
+            <Link className="btn-base btn-white btn-small mr-3">
               <FontAwesomeIcon icon={faPizzaSlice} />
               &nbsp; Pizzas
-            </ButtonWhiteLink>
-            <ButtonWhiteLink sm>
+            </Link>
+            <Link className="btn-base btn-white btn-small mr-3">
               <FontAwesomeIcon icon={faDrumstickBite} />
               &nbsp; Churrasco
-            </ButtonWhiteLink>
-            <ButtonWhiteLink sm>
+            </Link>
+            <Link className="btn-base btn-white btn-small mr-3">
               <FontAwesomeIcon icon={faBacon} />
               &nbsp; Steaks
-            </ButtonWhiteLink>
-            <ButtonWhiteLink sm>
+            </Link>
+            <Link className="btn-base btn-white btn-small mr-3">
               <FontAwesomeIcon icon={faIceCream} />
               &nbsp; Sobremesas
-            </ButtonWhiteLink>
-            <ButtonWhiteLink sm>
+            </Link>
+            <Link className="btn-base btn-white btn-small">
               <FontAwesomeIcon icon={faCocktail} />
               &nbsp; Bebidas
-            </ButtonWhiteLink>
+            </Link>
           </div>
 
           <div className="col-12">
@@ -65,7 +65,7 @@ const Menu = () => {
           </div>
 
           <div className="col-12 text-center">
-            <ButtonWhiteLink sm>Ver mais</ButtonWhiteLink>
+            <Link className="btn-base btn-white btn-small">Ver mais</Link>
           </div>
         </div>
       </div>

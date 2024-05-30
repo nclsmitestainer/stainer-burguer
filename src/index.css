@@ -4,6 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-base {
+    @apply inline-block text-center whitespace-nowrap align-middle border border-transparent;
+  }
+  .btn-yellow {
+    @apply bg-primary text-white rounded-[20px] py-[15px] px-[25px] text-xl shadow-lg;
+  }
+  .btn-white {
+    @apply bg-white text-black rounded-[20px] py-[15px] px-[25px] text-xl shadow-lg hover:bg-primary;
+  }
+  .btn-small {
+    @apply !py-2 !px-4 !rounded-2xl !text-lg;
+  }
+  .btn-social {
+    @apply w-[50px];
+  }
+  .btn-mais {
+    @apply text-absolute-black py-1 px-2 border-2 border-absolute-black text-sm cursor-pointer rounded-tr-[10px] rounded-br-[10px] hover:bg-absolute-black hover:text-white;
+  }
+  .btn-menos {
+    @apply text-absolute-black py-1 px-2 border-2 border-absolute-black text-sm cursor-pointer rounded-tl-[10px] rounded-bl-[10px] hover:bg-absolute-black hover:text-white;
+  }
+  .btn-add {
+    @apply border-2 border-absolute-black text-base py-1 px-2 rounded-[10px] text-white bg-absolute-black ml-4 hover:border-white;
+  }
+  .btn-remove {
+    @apply border-2 border-red text-base py-1 px-2 rounded-[10px] text-white bg-red ml-4;
+  }
+  .numero-itens {
+    @apply text-absolute-black py-1 px-4 border-t-2 border-b-2 border-absolute-black text-lg;
+  }
+  .icon {
+    @apply inline-block text-black bg-primary w-[45px] h-[45px] absolute right-2 -mt-2 rounded-2xl text-center pt-2;
+  }
+  .form-control {
+    @apply block w-full bg-white text-black rounded-[20px] py-4 px-6 text-xl shadow-lg !border-none !outline-none;
+  }
+}
+
 body {
   font-family: 'Poppins', 'Rubik', sans-serif;
 }
@@ -182,4 +221,21 @@ body {
 
 .card-item:hover .product-price {
   color: #000 !important;
+}
+
+.etapa.active,
+.etapa.active::before {
+  background-color: #ffbf00;
+}
+
+#modalContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+#modalContent::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+#modalContent::-webkit-scrollbar-track {
+  background: #fff;
 }

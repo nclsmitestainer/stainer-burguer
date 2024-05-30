@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ButtonSocial from './Buttons/ButtonSocial';
 import {
   faFacebookF,
   faInstagram,
@@ -24,27 +23,27 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-3 container-redes-footer flex items-center justify-end">
-            <ButtonSocial
-              className="mt-0"
+            <a
+              className="btn-base btn-white btn-small btn-social mr-3 mt-0"
               href="https://instagram.com"
               target="_blank"
             >
               <FontAwesomeIcon icon={faInstagram} />
-            </ButtonSocial>
-            <ButtonSocial
-              className="mt-0"
+            </a>
+            <a
+              className="btn-base btn-white btn-small btn-social mr-3 mt-0"
               href="https://facebook.com"
               target="_blank"
             >
               <FontAwesomeIcon icon={faFacebookF} />
-            </ButtonSocial>
-            <ButtonSocial
-              className="mt-0"
+            </a>
+            <a
+              className="btn-base btn-white btn-small btn-social mt-0"
               href="https://whatsapp.com"
               target="_blank"
             >
               <FontAwesomeIcon icon={faWhatsapp} />
-            </ButtonSocial>
+            </a>
           </div>
         </div>
       </div>

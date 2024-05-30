@@ -5,9 +5,7 @@ import {
   faFacebookF,
   faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
-import ButtonYellow from '../Buttons/ButtonYellow';
-import ButtonWhiteAnchor from '../Buttons/ButtonWhiteAnchor';
-import ButtonSocial from '../Buttons/ButtonSocial';
+import { NavLink } from 'react-router-dom';
 
 const Introduction = () => {
   return (
@@ -25,33 +23,41 @@ const Introduction = () => {
                 casa de forma rápida e segura.
               </p>
               <div>
-                <ButtonYellow href="/menu" className="mr-3">
+                <NavLink className="btn-base btn-yellow mt-4 mr-3" to="/menu">
                   Ver cardápio
-                </ButtonYellow>
-                <ButtonWhiteAnchor
+                </NavLink>
+                <a
                   href="tel:5519998554441"
-                  left
-                  icon={
-                    <FontAwesomeIcon
-                      icon={faPhoneFlip}
-                      className="text-white"
-                    />
-                  }
-                  target="_self"
+                  className="btn-base btn-white pl-[70px] mt-4"
                 >
+                  <span className="inline-block text-white bg-primary w-[45px] h-[45px] absolute -ml-[60px] -mt-2 rounded-2xl text-center pt-2">
+                    <FontAwesomeIcon icon={faPhoneFlip} />
+                  </span>
                   (19) 99855-4441
-                </ButtonWhiteAnchor>
+                </a>
               </div>
             </div>
-            <ButtonSocial href="https://instagram.com" target="_blank">
+            <a
+              className="btn-base btn-white btn-small btn-social mt-4 mr-3"
+              href="https://instagram.com"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faInstagram} />
-            </ButtonSocial>
-            <ButtonSocial href="https://facebook.com" target="_blank">
+            </a>
+            <a
+              className="btn-base btn-white btn-small btn-social mt-4 mr-3"
+              href="https://facebook.com"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
-            </ButtonSocial>
-            <ButtonSocial href="https://whatsapp.com" target="_blank">
+            </a>
+            <a
+              className="btn-base btn-white btn-small btn-social mt-4"
+              href="https://whatsapp.com"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faWhatsapp} />
-            </ButtonSocial>
+            </a>
           </div>
           <div className="relative min-h-px w-full px-4 flex-50% max-w-50%">
             <div className="card-banner h-[450px] w-[450px] rounded-[170px] bg-[#f4c949] absolute right-0 -top-20"></div>

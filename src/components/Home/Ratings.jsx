@@ -1,6 +1,6 @@
 import Title from '../Title';
 import CardRating from '../CardRating';
-import ButtonSocial from '../Buttons/ButtonSocial';
+import { Link } from 'react-router-dom';
 
 const Ratings = () => {
   return (
@@ -44,9 +44,13 @@ const Ratings = () => {
               /> */}
             </div>
 
-            <ButtonSocial className="active">1</ButtonSocial>
-            <ButtonSocial>2</ButtonSocial>
-            <ButtonSocial>3</ButtonSocial>
+            <Link className="btn-base btn-white btn-small btn-social mr-3 active">
+              1
+            </Link>
+            <Link className="btn-base btn-white btn-small btn-social mr-3">
+              2
+            </Link>
+            <Link className="btn-base btn-white btn-small btn-social">3</Link>
           </div>
         </div>
       </div>

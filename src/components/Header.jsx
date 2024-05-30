@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -50,11 +50,11 @@ const Header = () => {
             </ul>
           </div>
           <button
-            className="bg-white text-black rounded-2xl text-xl shadow-lg flex justify-evenly items-center px-2 py-2 hover:bg-primary w-60"
+            className="btn-base btn-white flex justify-evenly items-center w-56 py-2 px-0"
             onClick={() => document.getElementById('my_modal_2').showModal()}
           >
             <span id="shopping-bag-text">Meu carrinho </span>
-            <span className="icon text-black bg-primary w-[45px] h-[45px] rounded-2xl flex items-center justify-center ml-2">
+            <span className="text-black bg-primary w-[45px] h-[45px] rounded-2xl flex items-center justify-center">
               <FontAwesomeIcon icon={faCartShopping} />
             </span>
           </button>

@@ -11,11 +11,12 @@ import Cart from './pages/Cart';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
-import TestModal from './pages/TestModal';
+import Modal from './components/Modal/Modal';
 
 const MyRoutes = () => {
   return (
     <BrowserRouter>
+      <Modal />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,7 +25,6 @@ const MyRoutes = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/ratings" element={<Ratings />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/test-modal" element={<TestModal />} />
       </Routes>
       <Footer />
     </BrowserRouter>
